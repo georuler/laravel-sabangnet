@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="EUC-KR"?>
+<SABANG_ORDER_LIST>		
+	<HEADER>	
+		<SEND_COMPAYNY_ID>{{config('sabangnet.SEND_COMPAYNY_ID')}}</SEND_COMPAYNY_ID>
+		<SEND_AUTH_KEY>{{config('sabangnet.SEND_AUTH_KEY')}}</SEND_AUTH_KEY>
+		<SEND_DATE>{{config('sabangnet.SEND_DATE')}}</SEND_DATE>
+	</HEADER>	
+	<DATA>                	
+		<CS_ST_DATE>{{$CS_ST_DATE}}</CS_ST_DATE>
+		<CS_ED_DATE>{{$CS_ED_DATE}}</CS_ED_DATE>    
+		<CLM_FIELD><![CDATA[IDX|ORDER_ID|MALL_ID|MALL_USER_ID|CLAME_STATUS_GUBUN|CLAME_CONTENT|]]></CLM_FIELD>       
+	</DATA>	
+</SABANG_ORDER_LIST>		
