@@ -25,7 +25,7 @@ class SabangNetServiceProvider extends ServiceProvider
     {
         $this->publishes([
             __DIR__.'/../config/sabangnet.php' => config_path('sabangnet.php'),
-        ]);
+        ], 'sabangnet');
 
         //route add
         Route::middleware('api')
