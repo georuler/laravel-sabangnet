@@ -21,7 +21,7 @@ class SabangNetServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function boot(C)
+    public function boot()
     {
         $this->publishes([
             "../src" => $this->app . '/packages',
