@@ -1,0 +1,16 @@
+{
+    "name": "georuler/laravel-sabangnet",
+    "description": "sabangnet package",
+    "autoload": {
+        "psr-4": {
+            "Georuler\\Sabangnet\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "georuler",
+            "email": "georuler@gmail.com"
+        }
+    ],
+    "require": {}
+}
