@@ -25,7 +25,7 @@ class SabangNetServiceProvider extends ServiceProvider
     public function boot(ConfigRepository $configRepository)
     {
         $this->publishes([
-            __DIR__  => $this->app . '/packages',
+            "../src" => $this->app . '/packages',
         ], 'lighthouse-config');
 
         //route add
