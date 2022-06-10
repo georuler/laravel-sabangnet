@@ -16,5 +16,12 @@
     ],
     "require": {
         "php": ">=8"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Georuler\\Sabangnet\\SabangNetServiceProvider"
+            ]
+        }
     }
 }

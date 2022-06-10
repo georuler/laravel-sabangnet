@@ -4,6 +4,7 @@ namespace Georuler\Sabangnet;
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Contracts\Config\Repository as ConfigRepository;
 
 class SabangNetServiceProvider extends ServiceProvider
 {
@@ -21,8 +22,12 @@ class SabangNetServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function boot()
+    public function boot(ConfigRepository $configRepository)
     {
+        $this->publishes([
+            __DIR__  => $this->app . '/packages',
+        ], 'lighthouse-config');
+
         //route add
         Route::middleware('api')
         ->prefix('api')
