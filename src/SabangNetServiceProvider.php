@@ -24,8 +24,8 @@ class SabangNetServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            "../src" => $this->app . '/packages',
-        ], 'test');
+            __DIR__.'/..' => app_path().'/packages',
+        ]);
 
         //route add
         Route::middleware('api')
