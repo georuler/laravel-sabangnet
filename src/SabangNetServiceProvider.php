@@ -24,7 +24,7 @@ class SabangNetServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__.'/../config/sabangnet.php' => config_path('sabangnet.php'),
+            '../src' => app_path('/packages'),
         ], 'sabangnet');
 
         //route add
